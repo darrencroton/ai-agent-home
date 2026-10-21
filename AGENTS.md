@@ -1,6 +1,6 @@
 # Global Agent Instructions
 
-These instructions apply to all projects across all AI coding assistants (Claude Code, Codex CLI, etc.).
+These instructions apply to all projects across all AI coding assistants (Claude Code, Codex CLI, etc.)
 
 ---
 
@@ -40,13 +40,15 @@ These instructions apply to all projects across all AI coding assistants (Claude
 
 ---
 
-## File Organisation
+## Filesystem
 
-- Never delete files — archive to `archive/` subdirectories in the project root (create `archive/` if needed; add to `.gitignore` if working in a repo)
-- When asked to create a Markdown report write to the `docs/` directory (default) or Obsidian (if told) → use `obsidian-inbox/` directory
+- Never delete files unless explicitly told — move to `archive` subdirectories in the project root (create `archive` if needed; add to `.gitignore` if working in a repo)
+- When told to delete, use the non-destructive `trash` command instead
+- `cp` and `mv` are aliased to `-i` which hangs non-interactive runs — use `\cp` and `\mv` to bypass
 
 ---
 
 ## Writing & Markdown
 
-- When writing Markdown do NOT hard-wrap or truncate prose — modern Markdown readers soft-wrap automatically, and manual wrapping renders poorly and is hard to read/edit.
+- When writing Markdown do NOT hard-wrap or truncate prose — modern Markdown readers soft-wrap automatically and manual wrapping renders poorly and is hard to read/edit
+- When asked to create a Markdown report write to the `docs` directory (default) or Obsidian (if told) → use the `~/obsidian` directory if it exists (ask otherwise)
