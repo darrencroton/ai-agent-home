@@ -27,6 +27,7 @@ These instructions apply to all projects across all AI coding assistants (Claude
 
 - During multi-step or long-running work, provide concise progress updates: one sentence at each main step describing what you are doing, what you learned, or what you will do next
 - Keep updates sparse and useful; do not narrate trivial actions or repeat obvious status, but do not stay silent through meaningful phases of work
+- When I ask to be kept updated or say "ping me" (when done, if blocked, etc.), run `ping-me "<one-line summary of outcome or what you need>"` at that point, and check its exit code
 
 ---
 
