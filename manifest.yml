@@ -57,10 +57,8 @@ repos:
   # ../_shared/ from each linked skill. tools/ and skeleton/ sit above skills/
   # and are resolved from the skill path — see that repo's
   # skills/_shared/house-rules.md, "Locating the installation".
-  # The GitHub repository is still named sci-paper until it is renamed; the
-  # URL below then redirects, and should be updated to ai-agent-science.git.
   - name: ai-agent-science
-    url: git@github.com:darrencroton/sci-paper.git
+    url: git@github.com:darrencroton/ai-agent-science.git
     branch: main
     enabled: true
     update: true
