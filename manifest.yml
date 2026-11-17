@@ -51,12 +51,15 @@ repos:
     enabled: true
     update: true
 
-  # Paper-writing skills for astronomy. Exposes paper-start, paper-draft and
-  # paper-lit; skills/_shared/ has no SKILL.md and is correctly not linked as a
-  # skill, staying reachable as ../_shared/ from each linked skill. tools/ and
-  # skeleton/ sit above skills/ and are resolved from the skill path — see that
-  # repo's skills/_shared/house-rules.md, "Locating the installation".
-  - name: sci-paper
+  # The science-method toolkit (was sci-paper). Exposes paper (modes: start,
+  # draft, voice, venue, iterate) and literature; skills/_shared/ has no
+  # SKILL.md and is correctly not linked as a skill, staying reachable as
+  # ../_shared/ from each linked skill. tools/ and skeleton/ sit above skills/
+  # and are resolved from the skill path — see that repo's
+  # skills/_shared/house-rules.md, "Locating the installation".
+  # The GitHub repository is still named sci-paper until it is renamed; the
+  # URL below then redirects, and should be updated to ai-agent-science.git.
+  - name: ai-agent-science
     url: git@github.com:darrencroton/sci-paper.git
     branch: main
     enabled: true
