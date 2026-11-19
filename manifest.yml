@@ -51,12 +51,12 @@ repos:
     enabled: true
     update: true
 
-  # The science-method toolkit (was sci-paper). Exposes paper (modes: start,
-  # draft, voice, venue, iterate) and literature; skills/_shared/ has no
-  # SKILL.md and is correctly not linked as a skill, staying reachable as
-  # ../_shared/ from each linked skill. tools/ and skeleton/ sit above skills/
-  # and are resolved from the skill path — see that repo's
-  # skills/_shared/house-rules.md, "Locating the installation".
+  # The science-method toolkit. Exposes paper (a map of procedures) and
+  # literature; skills/_shared/ has no SKILL.md and is correctly not linked as
+  # a skill. Its paths (skills/, tools/, skeleton/) are relative to the
+  # installation root, which each paper workspace's AGENTS.md names. The
+  # installed copy may sit on a feature branch until it is merged; updates
+  # pull the checked-out branch, and `branch` applies to a fresh clone only.
   - name: ai-agent-science
     url: git@github.com:darrencroton/ai-agent-science.git
     branch: main
